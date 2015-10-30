@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Snake</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+	<h1>New snake</h1>
+	<form action="/snakes" method="post">
+		<label>Name: <input type="text" name="name" placeholder="Enter name here">	</label>
+		<label>Venomous? <input type="radio" name="venom" value="Yes" checked>Yes
+		<input type="radio" name="venom" value="No">No</label>
+		<input type="submit" class="btn" >	
+	</form>
+	<% if (typeof err != "undefined") { %>
+	<h3><%= err %></h3>
+	<% } %>
+</body>
+</html>

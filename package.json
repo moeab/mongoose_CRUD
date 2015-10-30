@@ -1,0 +1,10 @@
+{
+  "name": "mongoose_dashboard",
+  "description": "CRUD methods with Mongoose",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "ejs": "latest",
+    "express": "latest",
+    "mongoose": "latest"
+  }
+}

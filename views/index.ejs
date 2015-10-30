@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mongoose dashboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>	
+	<a class='btn' href="/snake/new">Add new snake</a>
+	<div id="snakes">
+		<% for(var i in snakes) { %>
+		<p>Name: <%= snakes[i].name %></p>
+		<p>Venomous? <%= snakes[i].venomous %></p>
+		<form method="post" action=<%= "/snake/" + snakes[i].id + "/destroy" %>>
+			<input class="btn" type="submit" value="X" id="btn">
+		</form>
+		<a class="btn" href=<%= "/snake/" + snakes[i].id + "/edit"%>>Edit</a>
+		<hr>
+		<% } %>
+	</div>
+</body>
+</html>
